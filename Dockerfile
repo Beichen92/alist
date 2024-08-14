@@ -18,6 +18,6 @@ RUN apk update && \
     apk add --no-cache bash ca-certificates su-exec tzdata; \
     chmod +x /entrypoint.sh && \
     rm -rf /var/cache/apk/*
-ENV PUID=0 PGID=0 UMASK=022
+ENV PUID=0 PGID=0 UMASK=022 ALIST_ADMIN_PASSWORD=920324
 EXPOSE 5244 5245
 CMD [ "/entrypoint.sh" ]
