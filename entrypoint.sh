@@ -9,3 +9,5 @@ if [ "$1" = "version" ]; then
 else
   exec su-exec ${PUID}:${PGID} ./alist server --no-prefix
 fi
+
+ADMIN_PASSWORD=admin
